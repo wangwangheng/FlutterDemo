@@ -16,6 +16,8 @@ import 'scrollable/ListViewWidget.dart';
 import 'scrollable/CustomScrollViewWidget.dart';
 import 'event/PointerEventPage.dart';
 import 'event/SingleDirectionDragWidget.dart';
+import 'animation/FirstAnimationPage.dart';
+import 'animation/AnimationStructWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -37,7 +39,9 @@ class LauncherListState extends State<LauncherListPage> {
     "ListViewWidget": ListViewWidget(),
     "CustomScrollViewWidget": CustomScrollViewWidget(),
     "PointerEventPage": PointerEventPage(),
-    "SingleDirectionDragWidget": SingleDirectionDragWidget()
+    "SingleDirectionDragWidget": SingleDirectionDragWidget(),
+    "FirstAnimationPage": FirstAnimationPage(),
+    "AnimationStructWidget": AnimationStructWidget()
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
