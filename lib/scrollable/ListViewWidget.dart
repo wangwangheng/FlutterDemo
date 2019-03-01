@@ -47,7 +47,11 @@ class ListViewWidgetState extends State<ListViewWidget> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
           Image.network("https://img.zcool.cn/community/011419598181890000002129e18ef0.jpg@2o.jpg"),
-          Expanded(child:Scrollbar(child: buildListView(context))),
+          Expanded(child: NotificationListener(
+            onNotification: (notification){
+              handleNotification(notification);
+            },
+              child: buildListView(context))),
     ],),floatingActionButton: !_showToTop ? null : FloatingActionButton(
       child: Icon(Icons.arrow_upward),
       onPressed: (){
@@ -101,6 +105,26 @@ class ListViewWidgetState extends State<ListViewWidget> {
 
       });
     });
+  }
+
+  void handleNotification(notification) {
+    switch(notification.runtimeType){
+      case ScrollStartNotification:{
+        debugPrint("handleNotification#ScrollStartNotification");
+      }break;
+      case ScrollEndNotification:{
+        debugPrint("handleNotification#ScrollEndNotification");
+      }break;
+      case ScrollUpdateNotification:{
+        debugPrint("handleNotification#ScrollUpdateNotification");
+      }break;
+      case OverscrollNotification:{
+        debugPrint("handleNotification#OverscrollNotification");
+      }break;
+      default: {
+        debugPrint("handleNotification#default");
+      }
+    }
   }
 
 }
