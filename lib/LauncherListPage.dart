@@ -21,6 +21,7 @@ import 'animation/AnimationStructWidget.dart';
 import 'animation/AnimationWidget.dart';
 import 'animation/GrowTransitionWidget.dart';
 import 'animation/RouteTransitionWidget.dart';
+import 'animation/HeroAnimationWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -47,7 +48,8 @@ class LauncherListState extends State<LauncherListPage> {
     "AnimationStructWidget": AnimationStructWidget(),
     "AnimationWidget": AnimationWidget(),
     "GrowTransitionWidget": GrowTransitionWidget(),
-    "RouteTransitionWidget": RouteTransitionWidget()
+    "RouteTransitionWidget": RouteTransitionWidget(),
+    "HeroAnimationWidget": HeroAnimationWidget()
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
