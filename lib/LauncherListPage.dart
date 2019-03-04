@@ -23,6 +23,7 @@ import 'animation/GrowTransitionWidget.dart';
 import 'animation/RouteTransitionWidget.dart';
 import 'animation/HeroAnimationWidget.dart';
 import 'animation/StaggerAnimationWidget.dart';
+import 'custom/ComposeWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -52,6 +53,7 @@ class LauncherListState extends State<LauncherListPage> {
     "RouteTransitionWidget": RouteTransitionWidget(),
     "HeroAnimationWidget": HeroAnimationWidget(),
     "StaggerAnimationWidget": StaggerAnimationWidget(),
+    "ComposeWidget": ComposeWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
