@@ -18,6 +18,7 @@ import 'event/PointerEventPage.dart';
 import 'event/SingleDirectionDragWidget.dart';
 import 'animation/FirstAnimationPage.dart';
 import 'animation/AnimationStructWidget.dart';
+import 'animation/AnimationWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -41,7 +42,8 @@ class LauncherListState extends State<LauncherListPage> {
     "PointerEventPage": PointerEventPage(),
     "SingleDirectionDragWidget": SingleDirectionDragWidget(),
     "FirstAnimationPage": FirstAnimationPage(),
-    "AnimationStructWidget": AnimationStructWidget()
+    "AnimationStructWidget": AnimationStructWidget(),
+    "AnimationWidget": AnimationWidget()
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
