@@ -72,8 +72,6 @@ class ContainerSampleLayoutState extends State<ContainerSampleLayout> with Singl
         BottomNavigationBarItem(icon: Icon(Icons.school),title: Text("School")),
       ],currentIndex: _selectedIndex,
 //      fixedColor: Colors.green,
-      selectedItemColor: Colors.green,
-      unselectedItemColor: Colors.black,
       onTap: (index){
         debugPrint("前一个索引:$_selectedIndex,当前选中索引:$index");
         setState(() {

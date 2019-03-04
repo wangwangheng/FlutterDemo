@@ -17,9 +17,9 @@ class LinearLayoutState extends State<LinearLayout> {
             crossAxisAlignment: CrossAxisAlignment.end,
             verticalDirection: VerticalDirection.up,
             children: <Widget>[
-              Text("HelloWorld",style: TextStyle(backgroundColor: Colors.greenAccent),),
-              Text("HelloWorld",style: TextStyle(backgroundColor: Colors.red,fontSize: 15),),
-              Text("HelloWorld",style: TextStyle(backgroundColor: Colors.deepOrange,fontSize: 25),),
+              Text("HelloWorld",style: TextStyle(color: Colors.greenAccent),),
+              Text("HelloWorld",style: TextStyle(color: Colors.red,fontSize: 15),),
+              Text("HelloWorld",style: TextStyle(color: Colors.deepOrange,fontSize: 25),),
             ],
         ),
 
@@ -29,9 +29,9 @@ class LinearLayoutState extends State<LinearLayout> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.end ,
           children: <Widget>[
-          Text("HelloWorld",style: TextStyle(backgroundColor: Colors.greenAccent),),
-          Text("HelloWorld",style: TextStyle(backgroundColor: Colors.red,fontSize: 15),),
-          Text("HelloWorld",style: TextStyle(backgroundColor: Colors.deepOrange,fontSize: 25),),
+          Text("HelloWorld",style: TextStyle(color: Colors.greenAccent),),
+          Text("HelloWorld",style: TextStyle(color: Colors.red,fontSize: 15),),
+          Text("HelloWorld",style: TextStyle(color: Colors.deepOrange,fontSize: 25),),
         ],)))
 
 
