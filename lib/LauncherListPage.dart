@@ -20,6 +20,7 @@ import 'animation/FirstAnimationPage.dart';
 import 'animation/AnimationStructWidget.dart';
 import 'animation/AnimationWidget.dart';
 import 'animation/GrowTransitionWidget.dart';
+import 'animation/RouteTransitionWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -45,7 +46,8 @@ class LauncherListState extends State<LauncherListPage> {
     "FirstAnimationPage": FirstAnimationPage(),
     "AnimationStructWidget": AnimationStructWidget(),
     "AnimationWidget": AnimationWidget(),
-    "GrowTransitionWidget": GrowTransitionWidget()
+    "GrowTransitionWidget": GrowTransitionWidget(),
+    "RouteTransitionWidget": RouteTransitionWidget()
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
@@ -68,8 +70,7 @@ class LauncherListState extends State<LauncherListPage> {
                       style: TextStyle(color: Colors.white),
                     ),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext context) {
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
                         return _map[key];
                       }));
                     },
