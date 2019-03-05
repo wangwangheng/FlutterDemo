@@ -26,6 +26,7 @@ import 'animation/StaggerAnimationWidget.dart';
 import 'custom/ComposeWidget.dart';
 import 'custom/TurnBoxWidget.dart';
 import 'custom/GobangWidget.dart';
+import 'custom/ProgressBarWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -58,6 +59,7 @@ class LauncherListState extends State<LauncherListPage> {
     "ComposeWidget": ComposeWidget(),
     "TurnBoxWidget": TurnBoxWidget(),
     "GobangWidget": GobangWidget(),
+    "ProgressBarWidget": ProgressBarWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
