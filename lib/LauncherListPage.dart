@@ -1,35 +1,36 @@
 import 'package:flutter/material.dart';
-import 'DoubleBackUtils.dart';
-import 'WidgetUtils.dart';
 
+import 'DoubleBackUtils.dart';
+import 'FormPage.dart';
 import 'SecondPage.dart';
 import 'ThirdPage.dart';
-import 'FormPage.dart';
-import 'layout/LinearLayout.dart';
-import 'layout/FlexLayout.dart';
-import 'layout/FlowLayout.dart';
+import 'WidgetUtils.dart';
+import 'animation/AnimationStructWidget.dart';
+import 'animation/AnimationWidget.dart';
+import 'animation/FirstAnimationPage.dart';
+import 'animation/GrowTransitionWidget.dart';
+import 'animation/HeroAnimationWidget.dart';
+import 'animation/RouteTransitionWidget.dart';
+import 'animation/StaggerAnimationWidget.dart';
 import 'container/ContainerLayout.dart';
 import 'container/ContainerSampleLayout.dart';
 import 'container/DrawerLayout.dart';
-import 'scrollable/SingleChildScrollViewLayout.dart';
-import 'scrollable/ListViewWidget.dart';
-import 'scrollable/CustomScrollViewWidget.dart';
-import 'event/PointerEventPage.dart';
-import 'event/SingleDirectionDragWidget.dart';
-import 'animation/FirstAnimationPage.dart';
-import 'animation/AnimationStructWidget.dart';
-import 'animation/AnimationWidget.dart';
-import 'animation/GrowTransitionWidget.dart';
-import 'animation/RouteTransitionWidget.dart';
-import 'animation/HeroAnimationWidget.dart';
-import 'animation/StaggerAnimationWidget.dart';
 import 'custom/ComposeWidget.dart';
-import 'custom/TurnBoxWidget.dart';
 import 'custom/GobangWidget.dart';
 import 'custom/ProgressBarWidget.dart';
+import 'custom/TurnBoxWidget.dart';
+import 'event/PointerEventPage.dart';
+import 'event/SingleDirectionDragWidget.dart';
+import 'io/DioDemoWidget.dart';
 import 'io/FileDemoWidget.dart';
-import 'io/SPDemoWidget.dart';
 import 'io/HttpClientDemoWidget.dart';
+import 'io/SPDemoWidget.dart';
+import 'layout/FlexLayout.dart';
+import 'layout/FlowLayout.dart';
+import 'layout/LinearLayout.dart';
+import 'scrollable/CustomScrollViewWidget.dart';
+import 'scrollable/ListViewWidget.dart';
+import 'scrollable/SingleChildScrollViewLayout.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -66,9 +67,17 @@ class LauncherListState extends State<LauncherListPage> {
     "文件读写": FileDemoWidget(),
     "SharedPreferences读写": SPDemoWidget(),
     "HttpClient例子": HttpClientDemoWidget(),
+    "Dio例子": DioDemoWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
+
+  @override
+  void initState() {
+//    Locale locale = Localizations.localeOf(context);
+//    debugPrint("${locale.languageCode}-${locale.countryCode}");
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

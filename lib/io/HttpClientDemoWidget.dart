@@ -42,7 +42,7 @@ class HttpClientDemoState extends State<HttpClientDemoWidget> {
         content = e.toString();
       }
       setState(() {
-        _content = content;
+        _content = content.replaceAll(new RegExp(r"\s"), "");
       });
 
       return content;
