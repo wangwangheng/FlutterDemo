@@ -29,6 +29,7 @@ import 'custom/GobangWidget.dart';
 import 'custom/ProgressBarWidget.dart';
 import 'io/FileDemoWidget.dart';
 import 'io/SPDemoWidget.dart';
+import 'io/HttpClientDemoWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -64,6 +65,7 @@ class LauncherListState extends State<LauncherListPage> {
     "ProgressBarWidget": ProgressBarWidget(),
     "文件读写": FileDemoWidget(),
     "SharedPreferences读写": SPDemoWidget(),
+    "HttpClient例子": HttpClientDemoWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
