@@ -27,6 +27,8 @@ import 'custom/ComposeWidget.dart';
 import 'custom/TurnBoxWidget.dart';
 import 'custom/GobangWidget.dart';
 import 'custom/ProgressBarWidget.dart';
+import 'io/FileDemoWidget.dart';
+import 'io/SPDemoWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -60,6 +62,8 @@ class LauncherListState extends State<LauncherListPage> {
     "TurnBoxWidget": TurnBoxWidget(),
     "GobangWidget": GobangWidget(),
     "ProgressBarWidget": ProgressBarWidget(),
+    "文件读写": FileDemoWidget(),
+    "SharedPreferences读写": SPDemoWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
