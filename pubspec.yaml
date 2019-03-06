@@ -36,8 +36,11 @@ dependencies:
   # shared_preference
   shared_preferences: 0.5.1+1
 
- # dio
+  # dio
   dio: 2.0.18
+
+  # WebSocket
+  web_socket_channel: 1.0.9
 
 dev_dependencies:
   flutter_test:
