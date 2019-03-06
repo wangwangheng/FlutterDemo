@@ -34,6 +34,7 @@ import 'scrollable/SingleChildScrollViewLayout.dart';
 import 'io/WebSocketWidget.dart';
 import 'io/SocketDemoWidget.dart';
 import 'io/JsonDemoWidget.dart';
+import 'localizations/LocalizationsDemoWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -74,6 +75,7 @@ class LauncherListState extends State<LauncherListPage> {
     "WebSocket例子": WebSocketWidget(),
     "Socket例子": SocketDemoWidget(),
     "Json解析": JsonDemoWidget(),
+    "本地化": LocalizationsDemoWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
