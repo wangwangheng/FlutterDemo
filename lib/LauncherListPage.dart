@@ -32,6 +32,7 @@ import 'scrollable/CustomScrollViewWidget.dart';
 import 'scrollable/ListViewWidget.dart';
 import 'scrollable/SingleChildScrollViewLayout.dart';
 import 'io/WebSocketWidget.dart';
+import 'io/SocketDemoWidget.dart';
 
 class LauncherListPage extends StatefulWidget {
   @override
@@ -70,6 +71,7 @@ class LauncherListState extends State<LauncherListPage> {
     "HttpClient例子": HttpClientDemoWidget(),
     "Dio例子": DioDemoWidget(),
     "WebSocket例子": WebSocketWidget(),
+    "Socket例子": SocketDemoWidget(),
   };
 
   final _divider = Divider(color: Colors.white,height: 3,);
