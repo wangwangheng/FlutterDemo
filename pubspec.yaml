@@ -42,9 +42,17 @@ dependencies:
   # WebSocket
   web_socket_channel: 1.0.9
 
+  # json_annotation
+  json_annotation: 2.0.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # json_serializable
+  build_runner: ^1.0.0
+  json_serializable: 2.0.2
 
 
 # For information on the generic Dart part of this file, see the
